@@ -24,17 +24,15 @@ export class App extends Component {
       number,
     };
 
-    this.setState(({ contacts }) => {
-      if (
+    const { contacts } = this.state;
+
+    if (
         contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase())
       ) {
         return alert(`${name} is already in contacts`);
-      }
-      return {
-        contacts: [...contacts, newContact],
-      }
-    })
-    // this.setState(prevState => ({ contacts: [...prevState.contacts, newContact] }));
+    }
+    
+    this.setState(prevState => ({ contacts: [...prevState.contacts, newContact] }));
   };
 
   heandleChangeFilter = event => {

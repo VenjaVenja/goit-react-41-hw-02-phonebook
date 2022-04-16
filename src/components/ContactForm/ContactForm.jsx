@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Form, Label, Text, Input, AddContactBtn } from './ContactForm.styled';
-// import propTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 export class ContactForm extends Component {
   state = {
@@ -67,4 +67,9 @@ export class ContactForm extends Component {
       </>
     );
   }
-}
+};
+
+ContactForm.propTypes = {
+  onSubmit: propTypes.func.isRequired,
+};
+
