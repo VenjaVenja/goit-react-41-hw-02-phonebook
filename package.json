@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-41-hw-02-phonebook",
+  "name": "goit-react-41-hw-03-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VenjaVenja.github.io/goit-react-41-hw-02-phonebook/",
+  "homepage": "https://VenjaVenja.github.io/goit-react-41-hw-03-phonebook/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
